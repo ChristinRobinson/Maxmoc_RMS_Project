@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icon.ico" type="image/x-icon">
+    <title>Maxmoc Dashboard - HJS-RMS APPLICATION</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <section id="app">
+      <!-- Header Start -->
+      <header id="header" class="header">
+        <div id="search-container" class="search-container">
+          <input type="text" id="search-input" class="search-input" name="search-input" placeholder="Search">
+          <label for="search-container"></label><img src="./assets/svg/icons/search.svg" alt="">
+        </div>
+        <nav id="adapter-switch" class="adapter-switch">
+          <div class="pla">Peak Light Adapter</div>
+          <div class="can active-adapter">CAN Adapter</div>
+        </nav>
+        <div id="language-switch" class="language-switch ">
+          <label for="language">Language</label>
+          <select name="language-select" id="language">
+            <option value="english">English</option>
+            <option value="tamil">Tamil</option>
+            <option value="hindi">Hindi</option>
+            <option value="kannada">Kannada</option>
+          </select>
+        </div>
+      </header>
+      <!-- Header End -->
+      <!-- Navigation Menu Start -->
+      <section id="navigation-menu" class="navigation-menu">
+        <div class="logo">
+          <img src="./assets/svg/maxmoc-logo-light.svg" alt="">
+        </div>
+        <nav id="page-navigation" class="page-navigation">
+          <ul class="page-links-group">
+            <li id="connectionNetworkManagement" class="page-link">
+              <span><img src="./assets/svg/connection-network-management.svg" alt=""></span>
+              Network Management
+              <div class="status-indicator active-page"></div>
+            </li>
+            <li id="mapsCalibration" class="page-link">
+              <span><img src="./assets/svg/maps-calibration.svg" alt=""></span>
+              Maps Calibration
+              <div class="status-indicator"></div>
+            </li>
+            <li id="measurement" class="page-link">
+              <span><img src="./assets/svg/measurement.svg" alt=""></span>
+              Measurement
+              <div class="status-indicator"></div>
+            </li>
+            <li id="diagnostics" class="page-link">
+              <span><img src="./assets/svg/diagnostics.svg" alt=""></span>
+              Diagnostics
+              <div class="status-indicator"></div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Navigation Menu End -->
+      <!-- Main Start -->
+      <main id="main" class="main">
+
+        <section class="view-title">
+          <h2>Heading</h2>
+        </section>
+
+        <!-- Axis Selection Control Start -->
+        <div class="axis-selection-control">
+          <div class="axis-X-control">
+            <label for="axis-X-select">Axis X</label>
+            <select name="axis-X-value" id="axis-X-select" class="box-shadow">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="axis-Y-control">
+            <label for="axis-Y-select">Axis Y</label>
+            <select name="axis-Y-value" id="axis-Y-select" class="box-shadow">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="chosen box-shadow">
+            Chosen : <span class="chosen-value"></span>
+          </div>
+        </div>
+        <!-- Axis Selection Control End -->
+
+        <section id="graph-section" class="graph-section">
+          <div class="graph-heading-X box-shadow">Axis X : </div>
+          <div class="graph-heading-Y box-shadow">Axis Y : </div>
+          <div class="graph-display box-shadow"></div>
+          <div class="cancel-selection box-shadow">
+            Cancel Selection
+          </div>
+          <div class="operation-controls">
+            <div class="precise-map">
+              Precise Map Cofiguration From ECU
+            </div>
+            <div class="read-chosen-version">
+              Read Chosen Version of all maps from ECU
+            </div>
+            <div class="write-to-ecu">Write to ECU</div>
+            <div class="read-to-ecu">Read to ECU</div>
+            <div class="save-to-file">Save to file</div>
+            <div class="load-from-file">Load from file</div>
+          </div>
+        </section>
+        <div class="graph-sheets"></div>
+        <div class="generating-buttons"></div>
+      </main>
+      <!-- Main End -->
+
+    </section>
+    <!-- External Scripts -->
+    <script src="./js/script.js"></script>
+
+  </body>
+
+</html>
