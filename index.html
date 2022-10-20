@@ -101,8 +101,8 @@
         <!-- Axis Selection Control End -->
 
         <section id="graph-section" class="graph-section">
-          <div class="graph-heading-X box-shadow">Axis X : </div>
-          <div class="graph-heading-Y box-shadow">Axis Y : </div>
+          <div class="graph-heading-X box-shadow"><span>Axis X : </span></div>
+          <div class="graph-heading-Y box-shadow"><span>Axis Y : </span></div>
           <div class="graph-display box-shadow"></div>
           <div class="cancel-selection box-shadow">
             Cancel Selection
@@ -120,8 +120,22 @@
             <div class="load-from-file">Load from file</div>
           </div>
         </section>
-        <div class="graph-sheets"></div>
-        <div class="generating-buttons"></div>
+        <div class="graph-navigators">
+          <div class="graph-btn">Graph</div>
+          <div class="graph-sheets-group">
+            <div class="rpm-sheet graph-option box-shadow active-graph-indicator">RPM (rpm)</div>
+            <div class="temperature-sheet graph-option box-shadow">Temperature</div>
+            <div class="pressure-sheet graph-option box-shadow">Pressure</div>
+            <div class="delta-pressure-sheet graph-option box-shadow">Delta Pressure</div>
+          </div>
+          <div class="graph-generating-buttons">
+            <div class="read-map-btn graph-btn graph-generate-btn">Read map with axis from ECU</div>
+            <div class="active-work-map-btn graph-btn graph-generate-btn">
+              Active work map in RAM
+            </div>
+          </div>
+        </div>
+
       </main>
       <!-- Main End -->
 
