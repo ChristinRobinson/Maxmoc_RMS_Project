@@ -81,7 +81,7 @@ CUSTOM CSS
   gap: 1rem;
   grid-area: header;
   position: sticky;
-  top: 0;
+  top: -40px;
 }
 .search-container {
   height: 35px;
