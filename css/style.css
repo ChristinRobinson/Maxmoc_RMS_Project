@@ -360,9 +360,13 @@ CUSTOM CSS
 .graph-navigators {
   margin-top: 0.5rem;
   display: grid;
-  grid-template-columns: 1fr 4.5fr 4.5fr 2fr;
+  grid-template-columns: 1fr 9fr 2fr;
   align-items: flex-end;
   gap: 1rem;
+}
+.graph-control-section {
+  display: flex;
+  align-items: flex-end;
 }
 .graph-sheets-group {
   height: 40px;
@@ -372,17 +376,19 @@ CUSTOM CSS
   width: 200px;
   background-color: var(--bg-white);
   color: var(--clr-dark);
+  text-align: center;
   margin-left: -100px;
-  padding: 0 20px;
+  padding-right: 10px;
   border-bottom-right-radius: 40px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: flex-end;
   transition: all 0.2s;
 }
 .graph-option:first-child {
   width: 100px;
   margin: 0;
+  grid-template-columns: 1fr;
 }
 .graph-option:nth-child(1) {
   z-index: 4;
@@ -432,7 +438,7 @@ CUSTOM CSS
   .graph-navigators {
     margin-top: 0.5rem;
     display: grid;
-    grid-template-columns: 1fr 5.5fr 5.5fr;
+    grid-template-columns: 1fr 11fr;
     align-items: flex-end;
     gap: 1rem;
   }
